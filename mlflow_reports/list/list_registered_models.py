@@ -5,8 +5,8 @@ List all registered models.
 import click
 from mlflow_reports.common import io_utils
 from mlflow_reports.common.click_options import opt_output_file_base
-from . import search_registered_models
-from . click_options import (
+from mlflow_reports.list import search_registered_models
+from mlflow_reports.list.click_options import (
     opt_filter,
     opt_prefix,
     opt_get_tags_and_aliases,
