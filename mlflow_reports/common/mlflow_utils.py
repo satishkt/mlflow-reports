@@ -42,7 +42,7 @@ def get_registered_model(model_name, get_permissions):
         return model["registered_model"]
 
 
-def search_registered_models(filter=None, get_search_object_again=False):
+def search_registered_models(filter=None, get_search_object_again=True):
     """
     Search for registered models.
     For Databricks UC, need to call 'registered-models/get' again for each
